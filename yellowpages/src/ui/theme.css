@@ -1,0 +1,12 @@
+body { 
+  --primary-color: #ffb300;
+  --secondary-color: #dd4952;
+  --accent-color: #2e7d32;
+
+  --background-color: #ffffff; 
+  --white-color: #ffffff;
+  --black-color: #262626;
+  --grey-color: #DFDFDF; 
+  --lightgrey-color: #efefef; 
+  --shadow-color: rgba(0,0,0,.08);  
+} 
