@@ -67,12 +67,3 @@ export default function Home() {
     </>
   );
 } 
-
-
-
-
-
-// yuri diego
-// carla
-// 040284889074587
-// 
