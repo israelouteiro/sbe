@@ -9,7 +9,7 @@ import {
     
 } from "./styled";
      
-export default function SearchInput({ value, onChange, placeholder, onSubmit}) {
+export default function SearchInput({ value, onChange, placeholder, onSubmit }) {
 
   return ( 
     <>
@@ -21,4 +21,5 @@ export default function SearchInput({ value, onChange, placeholder, onSubmit}) {
         </FormInputContainter> 
     </>
   );
-}  
+
+} 

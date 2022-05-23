@@ -7,8 +7,14 @@ export const CoreState = ({ children }) => {
       
 	const [ darkmode, setDarkmode ] = useState( ReadObject('darkmode') ? ReadObject('darkmode') : false )  
 
+
+	const toggleDarkmode = () => {
+		setDarkmode(!darkmode)
+	}
+
+
 	const contextValue = {  
-		darkmode, setDarkmode
+		darkmode, setDarkmode, toggleDarkmode
 	}
 
     useEffect(() => { SaveObject('darkmode', darkmode) ;}, [darkmode]) 

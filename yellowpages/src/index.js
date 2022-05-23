@@ -6,12 +6,14 @@ import Home from 'screens/Home';
 import reportWebVitals from './reportWebVitals';
 
 import { CoreState } from 'context/CoreContext' 
+import { ThemeCore } from 'ui/theme';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <CoreState>
         <Home /> 
+        <ThemeCore />
     </CoreState>
   </React.StrictMode>
 );

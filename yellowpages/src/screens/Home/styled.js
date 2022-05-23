@@ -106,3 +106,30 @@ export const ResultLoading = styled(Lottie).attrs( props => ({
 }))`        
     max-width: 100%;
 `;  
+
+
+
+
+
+
+export const ThemeContent = styled.div.attrs({
+
+})`
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px 20px;
+`;
+
+export const ThemeButton = styled.div.attrs({
+
+})`
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    jusify-content: center;
+
+    box-shadow: 0px 3px 6px var(--shadow-color);
+`;

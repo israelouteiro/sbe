@@ -29,12 +29,18 @@ const initUsers = async (server) => {
           } 
           
           const filterUser = user => { 
+
             const expressions = payload.searchExpression.split(' ').filter(fit => fit)
-            const findableParams = Object.keys(user).filter(param => searchableParams.includes(param)) 
+            const findableParams = Object.keys(user).filter(param => searchableParams.includes(param))
+
             return ( !payload.searchExpression || 
+
+              
                 expressions.filter(expression =>
                     findableParams.filter(k => verifyParam(user[k], expression) ).length > 0
                 ).length === expressions.length 
+
+
             )
           } 
           const verifyParam = (param, expression) => {  
